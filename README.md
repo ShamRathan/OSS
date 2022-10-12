@@ -223,7 +223,7 @@ int main()
     }
     avg_tat=(float)total;
     printf("\n\n Average Waiting Time =%f",avg_wt);
-    printf("\n Average Turnaround Time = %f\n",avg_tat);![Screenshot from 2022-10-12 11-49-45](https://user-images.githubusercontent.com/93587823/195265051-5ff3a835-030d-4124-a95f-286fc73e9f64.png)
+    printf("\n Average Turnaround Time = %f\n",avg_tat);
 
 }
 
