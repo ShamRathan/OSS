@@ -37,40 +37,54 @@ public class CubeProg : MonoBehaviour
 
 
 using System;
-namespace hello
+namespace Autovechicle
 {
-    public class vehicle
+    public class tyre
     {
-        public vehicle()
+        public tyre()
         {
-            Console.Write("Tyre is attached");
+            Console.WriteLine("Constructor tyre");
         }
+        public virtual void Display()
+        {
+            Console.WriteLine("tyre");
+        }
+    }
+    public class scooter : tyre
+    {
+        public scooter()
+        {
+            Console.WriteLine("Constructor scooter");
+        }
+        
+        public override void Display()
+        {
+            base.Display();
+            Console.WriteLine("scooter");
+        }
+    }
 
-    }
-    public class car : vehicle
+    public class car : tyre
     {
-        public void display()
+        public car()
         {
-            Console.WriteLine("to car");
+            Console.WriteLine("Constructor car");
+        }
+        public override void Display()
+        {
+            base.Display();
+            Console.WriteLine("car");
         }
     }
-    public class scooter : vehicle
-    {
-        public void display()
-        {
-            Console.WriteLine("to scooter");
-        }
-    }
-    public class program
+
+    public class Program
     {
         public static void Main(string[] args)
         {
-            car car = new car();
-            car.display();
-            Console.WriteLine();
-            scooter scooter = new scooter();
-            scooter.display();
-            Console.ReadKey();
+            car cd = new car();
+            scooter cdd = new scooter();
+            cd.Display();
+            cdd.Display();
         }
     }
 }
