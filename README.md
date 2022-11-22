@@ -35,7 +35,6 @@ public class CubeProg : MonoBehaviour
     }
 }
 
-```
 
 using System;
 namespace hello
@@ -75,4 +74,6 @@ namespace hello
         }
     }
 }
+'''
+
 
