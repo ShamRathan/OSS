@@ -36,3 +36,43 @@ public class CubeProg : MonoBehaviour
 }
 
 ```
+
+using System;
+namespace hello
+{
+    public class vehicle
+    {
+        public vehicle()
+        {
+            Console.Write("Tyre is attached");
+        }
+
+    }
+    public class car : vehicle
+    {
+        public void display()
+        {
+            Console.WriteLine("to car");
+        }
+    }
+    public class scooter : vehicle
+    {
+        public void display()
+        {
+            Console.WriteLine("to scooter");
+        }
+    }
+    public class program
+    {
+        public static void Main(string[] args)
+        {
+            car car = new car();
+            car.display();
+            Console.WriteLine();
+            scooter scooter = new scooter();
+            scooter.display();
+            Console.ReadKey();
+        }
+    }
+}
+
